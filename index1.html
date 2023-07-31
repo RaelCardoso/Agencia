@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Campo de Texto com Limitação e Evento "change"</title>
+</head>
+<body>
+  <label for="campo">Texto:</label>
+  <input type="text" id="campo" placeholder="Digite aqui" maxlength="20">
+
+  <script>
+    
+    function handleChange(event) {
+      const textoDigitado = event.target.value;
+      console.log("Texto digitado: ", textoDigitado);
+    }
+
+    
+    const campoTexto = document.getElementById("campo");
+
+    
+    campoTexto.addEventListener("change", handleChange);
+  </script>
+</body>
+</html>
